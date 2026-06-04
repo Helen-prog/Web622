@@ -1,0 +1,168 @@
+/* .rating{
+	display: flex;
+	flex-direction: row-reverse;
+	width: 170px;
+}
+
+.rating input[type="radio"]{
+	display: none;
+}
+
+.rating label{
+	font-size: 2.5rem;
+	color: lightgray;
+}
+
+.rating input:checked ~ label{
+	color: orange;
+} */
+
+/* #check + label{
+	display: flex;
+	align-items: center;
+}
+
+#check{
+	display: none;
+}
+
+#check + label > span{
+	display: block;
+	position: relative;
+	width: 50px;
+	height: 26px;
+	background: rgba(0,0,0,0.7);
+	border-radius: 20px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+#check + label > span::before{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: green;
+	border-radius: 50%;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	transition: all 0.2s;
+}
+
+#check:checked + label > span::before{
+	background: greenyellow;
+	left: 27px;
+}
+
+button[disabled]:hover{
+	background: silver;
+}
+.active{
+	display: none;
+}
+
+#check:checked ~ .active{
+	display: inline;
+	cursor: pointer;
+}
+#check:checked ~ .non-active{
+	display: none;
+} */
+
+
+
+.button {
+	width: 240px;
+	height: 77px;
+	border-radius: 39px;
+	border: none;
+	background: greenyellow;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+.button:hover{
+	background: green;
+	color: #FFF;
+
+	animation: shadow .6s infinite;
+}
+
+@keyframes shadow{
+	0% {
+		box-shadow: 0 0 10px 0px greenyellow, 0 0 10px 0px greenyellow;
+	}
+	100%{
+		box-shadow: 0 0 18px 6px transparent, 0 0 4px 50px transparent;
+	}
+}
+
+
+/* html, body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 100%;
+	min-width: 320px;
+}
+.header{
+	background-color: orange;
+	padding: 10px 0;
+	text-align: center;
+}
+.footer{
+	background-color: yellowgreen;
+	padding: 10px 0;
+	text-align: center;
+}
+.content{
+	margin: 10px 20px;	
+	display: flex;
+	flex-wrap: wrap;
+}
+.content__left, .content__right, .content__center{
+	padding: 20px;
+	background: yellow;
+	box-sizing: border-box;
+	margin: 10px 0; 
+}
+
+.content__left, .content__right{
+	flex-basis: 200px;
+}
+	
+.content__center{
+	flex-basis: calc(100% - 440px);
+	margin-left: 20px;
+	margin-right: 20px;
+	flex-grow: 1;
+}
+
+@media(max-width: 768px){
+	.content__center{
+		margin-right: 0;
+	}
+	.content__right{
+		flex-basis: 100%;
+	}
+}
+
+@media(max-width: 580px){
+	.content{
+		flex-direction: column;
+	}
+	.content__center{
+		margin-left: 0;
+	}
+	.content__left{
+		order: 1;
+	}
+	.content__right{
+		order: 2;
+	}
+} */

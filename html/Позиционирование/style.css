@@ -1,0 +1,111 @@
+div {
+	border: 2px solid #000;
+	position: absolute;
+}
+
+.face {
+	width: 550px;
+	height: 400px;
+	background: silver;
+	left: 200px;
+	top: 300px;
+	z-index: 0;
+}
+
+.nose {
+	width: 50px;
+	height: 50px;
+	background: red;
+	left: 450px;
+	top: 450px;
+	z-index: 2;
+}
+
+.eye-left {
+	width: 100px;
+	height: 100px;
+	background: white;
+	left: 300px;
+	top: 350px;
+}
+
+.eye-right {
+	width: 100px;
+	height: 100px;
+	background: white;
+	left: 550px;
+	top: 350px;
+}
+
+.pupil-left {
+	width: 50px;
+	height: 50px;
+	background: blue;
+	left: 350px;
+	top: 400px;
+}
+
+.pupil-right {
+	width: 50px;
+	height: 50px;
+	background: blue;
+	left: 600px;
+	top: 400px;
+}
+.mouth{
+	width: 250px;
+	height: 100px;
+	background: yellow;
+	left: 350px;
+	top: 550px;
+}
+.ear-left{
+	width: 50px;
+	height: 200px;
+	background: silver;
+	left: 100px;
+	top: 350px;
+}
+.ear-right{
+	width: 50px;
+	height: 200px;
+	background: silver;
+	left: 800px;
+	top: 350px;
+}
+.ear-drum-left{
+	width: 50px;
+	height: 100px;
+	background: gray;
+	left: 150px;
+	top: 400px;
+	z-index: -1;
+}
+.ear-drum-right{
+	width: 50px;
+	height: 100px;
+	background: gray;
+	left: 750px;
+	top: 400px;
+}
+.antenna-outer{
+	width: 150px;
+	height: 150px;
+	background: silver;
+	left: 400px;
+	top: 50px;	
+}
+.antenna-inner{
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	left: 450px;
+	top: 100px;	
+}
+.antenna-drum{
+	width: 50px;
+	height: 100px;
+	background: gray;
+	left: 450px;
+	top: 200px;	
+}

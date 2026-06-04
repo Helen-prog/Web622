@@ -1,0 +1,226 @@
+@font-face {
+    font-family: Recoleta-Black;
+    src: url('fonts/Recoleta-Black.woff2') format('woff2'),
+        url('fonts/Recoleta-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Recoleta-Bold;
+    src: url('fonts/Recoleta-Bold.woff2') format('woff2'),
+        url('fonts/Recoleta-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Recoleta-SemiBold;
+    src: url('fonts/Recoleta-SemiBold.woff2') format('woff2'),
+        url('fonts/Recoleta-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-bottom: 90px;
+}
+
+.header__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__block ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__block img {
+    margin: 20px 0;
+}
+
+.header__block a {
+    color: rgba(53, 55, 50, 1);
+    font-family: Recoleta-SemiBold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    margin-left: 27px;
+}
+
+.header h1 {
+    color: rgba(53, 55, 50, 1);
+    font-family: Recoleta-Bold;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 51px 0 0;
+}
+
+/* content */
+.content {
+    padding: 100px 0;
+    background: rgba(210, 210, 210, 1);
+}
+
+.content img {
+    width: 100%;
+}
+
+.content__block {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(100px, 124px));
+    grid-template-rows: repeat(4, auto);
+    gap: 16px;
+
+    grid-template-areas:
+        "header header header header top top"
+        "header header header header bottom bottom"
+        "middle1 middle1 middle1 middle2 middle2 middle2"
+        "footer1 footer1 footer2 footer2 footer3 footer3"
+    ;
+}
+
+.first {
+    grid-area: header;
+}
+
+.second {
+    grid-area: top;
+}
+
+.third {
+    grid-area: bottom;
+}
+
+.fouth {
+    grid-area: middle1;
+}
+
+.fifth {
+    grid-area: middle2;
+}
+
+.sixth {
+    grid-area: footer1;
+}
+
+.seven {
+    grid-area: footer2;
+}
+
+.eight {
+    grid-area: footer3;
+}
+
+.content__element {
+    box-sizing: border-box;
+    border: 1px solid rgba(248, 248, 248, 1);
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.03);
+    background: rgba(255, 255, 255, 1);
+}
+
+.content__element--main {
+    padding: 17px 23px 30px 20px;
+    /**/
+}
+
+.content__element--title {
+    color: rgba(53, 55, 50, 1);
+    font-family: Recoleta-Bold;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.content__element h3 {
+    color: rgba(69, 82, 91, 1);
+    font-family: Recoleta-Black;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    letter-spacing: 0%;
+    margin: 0 0 20px;
+}
+
+.content__element--description {
+    color: rgba(69, 82, 91, 1);
+    font-family: Recoleta-SemiBold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22.4px;
+    letter-spacing: 0%;
+    margin: 28px 0 66px;
+}
+
+.content__element--date {
+    color: rgba(69, 82, 91, 1);
+    font-family: Recoleta-Bold;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 16.8px;
+    letter-spacing: 0%;
+}
+
+/* Адаптация */
+@media (max-width: 1000px){
+    .wrap{
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px){
+    .content__block {
+        grid-template-columns: repeat(2, minmax(70px, 370px));
+        grid-template-rows: repeat(6, auto);
+
+        grid-template-areas: 
+            "header header"
+            "top bottom"
+            "middle1 middle2"
+            "footer1 footer1"
+            "footer2 footer2"
+            "footer3 footer3"
+        ;
+    }
+}
+
+@media (max-width: 550px){
+    .content__block {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+            "header"
+            "top"
+            "bottom"
+            "middle1"
+            "middle2"
+            "footer1"
+            "footer2"
+            "footer3"
+        ;
+    }
+}

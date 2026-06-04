@@ -1,0 +1,35 @@
+/* float: left | right */
+/* clear: left | right | both */
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+.header{
+    background: yellowgreen;
+    height: 100px;
+}
+.menu{
+    background: orange;
+    width: 200px;
+    float: right;
+}
+.left{
+    background: red;
+    width: 200px;
+    float: left;
+}
+.content{
+    background: yellow;
+    margin-right: 202px;
+    margin-left: 202px;
+}
+.footer{
+    background: silver;
+    height: 50px;
+    clear: both;
+}

@@ -1,0 +1,28 @@
+/* body{
+    background: url(../img/pattern.png);
+}
+table{
+    border: 2px solid silver;
+    background: white;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+td, th{
+    border: 2px solid silver;
+}
+td{
+    padding: 14px;
+}
+th{
+    background: url(../img/tablebg.jpg);
+    padding: 30px 20px;
+    
+}
+.row{
+    background: silver;
+} */
+
+
+.green, .green a{
+    color: green;
+}

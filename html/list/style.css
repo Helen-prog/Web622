@@ -1,0 +1,23 @@
+/* li>ul {
+    list-style-image: url(s.gif);
+}
+
+ol {
+    list-style-image: none;
+} */
+
+/* .list{
+    list-style: url(s.gif);
+}
+
+ol {
+    list-style: decimal none; 
+
+}  */
+
+.red{
+    color: red;
+}
+.black{
+    color: black;
+}

@@ -1,0 +1,55 @@
+/* p {
+    color: green;
+}
+#one {
+    color: orange;
+}
+.two{
+    font-style: italic;
+}
+div.two{
+    text-decoration: underline;
+}
+.big{
+    font-size: 18px;
+}
+.small{
+    font-size: 14px;
+}
+#one, div{
+    text-transform: uppercase;
+} */
+
+/* div > b{
+    color: red;
+}
+div i {
+    color: blue;
+} */
+
+/* em + span{
+    color: red;
+}
+em ~ strong{
+    color: blue;
+} */
+
+p {
+    color: green;
+}
+
+#one {
+    color: orange;
+}
+
+.two {
+    color: brown;
+}
+
+p {
+    color: violet;
+}
+
+.prior{
+    color: aqua !important;    
+}

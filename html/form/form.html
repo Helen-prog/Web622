@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Form</title>
+</head>
+
+<body>
+	<form action="#">
+		<fieldset>
+			<legend>Какие языки вы знаете</legend>
+
+			<p>
+				<input type="checkbox" checked id="ru">
+				<label for="ru">Русский</label> <br>
+
+				<label for="en">
+					<input type="checkbox" checked="checked" id="en"> Английский </label><br>
+
+				<input type="checkbox" checked=""> Китайский
+			</p>
+
+			<button>Отправить</button>
+		</fieldset>
+	</form>
+
+	<form action="#test.php" method="get">
+		<br>
+		<input type="text" list="tehnology">
+		<datalist id="tehnology">
+			<option value="HTML"></option>
+			<option value="CSS"></option>
+			<option value="JavaScript"></option>
+			<option value="React"></option>
+			<option value="Angular"></option>
+			<option value="PHP"></option>
+			<option value="Python"></option>
+		</datalist>
+
+		<p>
+			<textarea cols="145" rows="4" maxlength="100" placeholder="Комментарий"></textarea>
+		</p>
+
+		<p>
+			<select>
+				<option>Понедельник</option>
+				<option>Вторник</option>
+				<option>Среда</option>
+				<option selected>Четверг</option>
+				<option>Пятница</option>
+			</select>
+		</p>
+		<p>
+			<select multiple size="5">
+				<option disabled>День недели</option>
+				<option>Понедельник</option>
+				<option>Вторник</option>
+				<option>Среда</option>
+				<option>Четверг</option>
+				<option>Пятница</option>
+			</select>
+		</p>
+		<p>
+			<select>
+				<optgroup label="Цвет">
+					<option>Красный</option>
+					<option>Зеленый</option>
+					<option>Синий</option>
+				</optgroup>
+				<optgroup label="Тон">
+					<option>Светлый</option>
+					<option>Темный</option>
+				</optgroup>
+			</select>
+		</p>
+
+		<p>Имя: <input type="text" name="firstName" placeholder="Введите имя" size="40" maxlength="136"></p>
+		<p>
+			<label for="pas">Пароль: </label><input type="password" name="psw" placeholder="Введите пароль" id="pas">
+		</p>
+		<p><input type="file"></p>
+		<h3>Какие языки вы знаете</h3>
+		<p>
+			<input type="checkbox" checked id="ru">
+			<label for="ru">Русский</label> <br>
+
+			<label for="en">
+				<input type="checkbox" checked="checked" id="en"> Английский </label><br>
+
+			<input type="checkbox" checked=""> Китайский
+		</p>
+		<h3>Ваш пол</h3>
+		<p>
+			<input type="radio" name="pol"> M <br>
+			<input type="radio" name="pol" checked> Ж
+		</p>
+		<p>
+			<input type="reset" value="Обновить">
+			<input type="submit" value="Готово">
+			<button>Кнопка</button>
+			<input type="button" value="Без действий">
+			<input type="image" src="1.png">
+		</p>
+		<p>
+			<input type="color">
+			<input type="search">
+			<input type="date">
+			<input type="month" placeholder="Введите месяц и год">
+			<input type="email">
+			<input type="number" min="5" max="10">
+			<input type="range">
+		</p>
+	</form>
+</body>
+
+</html>

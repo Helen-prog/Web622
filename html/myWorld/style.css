@@ -1,0 +1,94 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background: #336699;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    background: #F5F9FD;
+}
+.header{
+    background: url(images/backgroung_top.jpg);
+    height: 176px;
+    text-align: right;  
+}
+.header img{
+    margin-top: 26px;
+    margin-right: 30px;
+}
+.line{
+    background: url(images/line.png);
+    height: 31px;
+}
+
+.menu{
+    width: 220px;
+    float: left;
+}
+.menu ul{
+    list-style: none;
+    padding-left: 20px;
+}
+.menu li{
+    margin-bottom: 10px;
+}
+.menu a, .menu li{
+    color: #336699;
+    font-weight: bold;
+} 
+
+.content{
+    margin-left: 222px;
+    margin-right: 20px;
+}
+.content h3{
+    text-align: center;
+    color: #336699;
+}
+.map-img{
+    float: left;
+    margin: 6px 8px 0 0;
+}
+.content p{
+    text-align: justify;
+}
+
+.footer{
+    background: url(images/backgroung_bottom.jpg);
+    height: 164px;
+    text-align: center;
+    
+}
+.footer p{
+    padding-top: 120px;
+    color: #FFF;
+}
+
+.map{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content ul{
+    list-style: none;
+}
+.content li{
+    float: right;
+    margin: 2px;
+    font-size: 14px;
+}
+.content a{
+    color: #336699;
+}
+
+.content h4{
+    clear: right;
+    padding-top: 30px;
+    color: gray;
+}
+
+.content table{
+    margin-left: 100px;
+}

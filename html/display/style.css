@@ -1,0 +1,154 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* горизонтальное меню */
+/* .vmenu{
+	list-style: none;
+	width: 200px;
+}
+
+.vmenu a{
+	color: gray;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid gray;
+	padding: 6px 10px;
+	display: block;
+	margin-bottom: -1px;
+}
+
+.vmenu .current a{
+	background: gray;
+	color: #FFF;
+}
+
+.vmenu a:hover{
+	background: silver;
+	color: #FFF;
+} */
+
+
+
+/* горизонтальное меню */
+/* .gmenu{
+	margin-top: 50px;
+	list-style: none;
+	text-align: center;
+}
+.gmenu li{
+	display: inline;
+}
+.gmenu a{
+	border: 1px solid gray;
+	padding: 16px 20px;
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+}
+.gmenu .current a{
+	background: gray;
+	color: white;
+}
+.gmenu a:hover{
+	background: silver;
+	color: #FFF;
+} */
+
+/* горизонтальное меню с выпадающими пунктами */
+.vmenu{
+	list-style: none;
+	width: 200px;
+}
+
+.vmenu a{
+	color: gray;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid gray;
+	padding: 6px 10px;
+	display: block;
+	margin-bottom: -1px;
+}
+
+.vmenu .current a{
+	background: gray;
+	color: #FFF;
+}
+
+.vmenu a:hover{
+	background: silver;
+	color: #FFF;
+}
+
+.vmenu .sub-menu{
+	display: none;
+	padding: 0;
+	list-style: none;
+}
+
+.vmenu .current{
+	position: relative;
+}
+
+.vmenu .current:hover .sub-menu{
+	position: absolute;
+	left: 180px;
+	top: 10px;
+	display: block;
+}
+.vmenu .sub-menu a{
+	background: silver;
+	width: 160px;
+}
+.vmenu .sub-menu a:hover{
+	background: #FFF;
+	color: gray;
+}
+
+/* вертикальное меню с выпадающими пунктами */
+.gmenu{
+	background: silver;
+	margin-top: 50px;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.gmenu > li{
+	display: inline-block;
+	position: relative;
+}
+.gmenu a{
+	
+	padding: 16px 20px;
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+	display: block;
+}
+.gmenu .sub-menu{
+	display: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	text-align: left;
+}
+.gmenu > li:hover .sub-menu{
+	display: block;
+}
+
+.gmenu .current a{
+	background: gray;
+	color: #FFF;
+	border-bottom: 1px solid #FFF;
+}
+/* .gmenu .current a{
+	background: gray;
+	color: white;
+}
+.gmenu a:hover{
+	background: silver;
+	color: #FFF;
+} */

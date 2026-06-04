@@ -1,0 +1,76 @@
+/* .layer {
+    overflow: auto;
+    overflow: scroll;
+    overflow: visible;
+    overflow: hidden;
+
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    border: 2px solid red;
+}
+
+.first{
+    border: 3px solid blue;
+    outline: 3px solid aqua;
+    outline-offset: 5px;
+}
+.second{
+    outline: 3px solid blueviolet;
+} */
+
+   /* .radius{
+    width: 300px;
+    height: 300px;
+    background: orange;
+ border-radius: 20px 0 60px 10px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 100px; */
+    /* border-radius: 50%; */
+    /* border-radius: 20px / 40px; */
+    /* border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; 
+    border-radius: 18px;  
+    border: 20px solid orangered;
+    /* 26 - 20 = 6 */
+    /* 18 - 20 = -2 */
+    /* padding: 20px;
+    opacity: 0.2; */
+    /* от 0 до 1 
+}
+img{
+     
+}*/
+
+.linear{
+    height: 200px;
+    /* background-image: linear-gradient(orange, green); */
+    /* background: linear-gradient(to bottom right, orange, green); */
+    /* background: linear-gradient(45deg, red, orange, yellow, green, aqua, blue, violet); */
+    /* background: linear-gradient(red,  yellow 10%, green 50%); */
+    /* background: repeating-linear-gradient(to right, yellow,  green 100px); */
+    background: repeating-linear-gradient(-45deg, yellow 0% 3%,   green 3% 6%);
+    border: 20px solid;
+    border-image: linear-gradient(45deg, green, yellow) 2;
+}
+.radial{
+    height: 200px;
+    background: radial-gradient(circle 80px, yellow, green);
+    background: radial-gradient(25% 50%, yellow, green);
+    background: radial-gradient(circle, yellow 20%, green 20% 40%, orange 40% 60%);
+     background: radial-gradient(circle at 25% top, yellow, green);
+    background: repeating-radial-gradient(circle, orange 0% 3%, yellow 3% 6%);
+    border: 20px solid;
+    border-image: repeating-linear-gradient(45deg, orange 0px 8px, yellow 8px 16px) 25;
+}
+
+.conic{
+    height: 200px;
+    background: conic-gradient(yellow 45%, green);
+    background: conic-gradient(at 75% 30%,yellow, green);
+    background: repeating-conic-gradient(green 0% 3%, yellow 3% 6%)
+}
+
+ul{
+    list-style-image: conic-gradient(green, yellow);    
+}

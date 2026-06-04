@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrap{
+    max-width: 1140px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header{
+    background: url(3146.jpg) top;
+    height: 100vh;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    color: #FFF;
+    position: relative;
+}
+
+.cnt{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header::after{
+    content: "";
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header .wrap{
+    position: relative;
+    z-index: 2;
+}
+
+.logo-img{
+    background: url(logo_white.svg);
+    width: 201px;
+    height: 104px;
+    display: block;
+    background-size: contain;
+}
+
+#img-svg path{
+    fill: greenyellow;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social i{
+    color: greenyellow;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+.certificate, .period{
+    padding: 40px 20px;
+}
+p{
+    margin: 20px 0;
+}
+h2{
+    margin: 40px 0 20px;
+}
+
+.advantages{
+    background: url(13635.jpg) center fixed;
+}
+
+.animation{
+    width: 100%;
+    animation: anim 3s infinite;
+}
+
+@keyframes anim{
+    0%, 48%, 62%, 96%{
+        filter: brightness(20%);
+    }
+    50%, 60%{
+        filter: sepia(1) contrast(2) brightness(200%);
+    }
+    96%{
+        filter: brightness(400%);
+    }
+}
+
+footer{
+    height: 500px;
+    background: url(37564.jpg) bottom;
+    /* mask-image: linear-gradient(transparent, black); */
+    mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 50%);
+}
+
+footer ul{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    list-style: none;
+}
+footer li{
+    margin: 20px;
+}

@@ -1,0 +1,35 @@
+.block{
+	display: flex;
+	flex-wrap: wrap;
+}
+.elem:first-child{
+	filter: brightness(1.5);
+}
+.elem:nth-child(2){
+	filter: contrast(1.5);
+}
+.elem:nth-child(3){
+	filter: grayscale(1);
+}
+.elem:nth-child(4){
+	filter: sepia(1);
+}
+.elem:nth-child(5){
+	filter: saturate(3)
+}
+.elem:nth-child(6){
+	filter: invert(1);
+}
+.elem:nth-child(7){
+	filter: opacity(0.4);
+}
+.elem:nth-child(8){
+	/* box-shadow: 5px 5px 12px 2px brown; */
+	filter: drop-shadow(5px 5px 12px brown);
+}
+.elem:nth-child(9){
+	filter: blur(3px);
+}
+.elem:nth-child(10){
+	filter: hue-rotate(30deg);
+}

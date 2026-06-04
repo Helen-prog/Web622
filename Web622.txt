@@ -1,0 +1,166 @@
+I
+Ctrl + G - сгруппировать
+Ctrl + Shift + G - разгруппировать
+
+Ctrl + Alt + C - скоприровать стили
+Ctrl + Alt + V - применить стиль
+
+Ctrl + R
+- переименовать слой
+Tab 
+- чтобы переименовать слой ниже
+Shift + Tab
+- чтобы переименовать слой выше
+
+Has Left Icon
+Has Right Icon
+Has Text
+Text Input  
+Button
+
+State  Default
+State  Hover
+
+Checkbox / Unchecked
+		   Checked
+		   
+Radio Button / Selected=True, Active=True
+			   Selected=False, Active=True
+			   Selected=False, Active=False
+			   Selected=True, Active=False
+
+State  Checked
+
+Написать отзыв по дисциплине "Основы Web-дизайна"
+
+
+index.html
+inform.html
+
+new file.html
+file:///E:/Web622/html/new%20file.html
+новый файл.html
+
+!	Tab
+
+Ctrl + S
+- сохранить документ
+
+F5
+- обновить документ
+
+Shift + Alt + F
+- отформатировать разметку
+
+align="left | center | right | justijy"
+
+Ctrl + /
+- комментарий
+<!--  -->
+
+H20
+
+open in browser
+
+Ctrl + H
+- поиск и замена
+
+align="
+style="text-align: 
+
+r - red
+g - green
+b - blue
+от 0 до 255
+rgb(255, 0, 0)
+
+#FF0000
+0-9A-F
+
+Растровое изображение:
+*.jpg (*.jpeg)
+*.png
+*.gif
+
+Векторные изображения:
+*.svg
+
+style.css
+
+left right top bottom center
+
+file:///E:/Web622/html/form/test.php
+
+file:///E:/Web622/html/form/form.html?firstName=Alena&psw=123456&pol=on#test.php
+file:///E:/Web622/html/form/form.html?page=4
+
+top bottom left right 
+
+rem - задает размер относительно размера шрифта элемента <html>
+
+em - задает размер относительно размера шрифта родительского элемента
+
+vw (viewport width) - 1% от ширины экрана
+
+1600px, то 1vw = 16px
+
+vh (viewport height) - 1% высоты окна
+
+Подготовить 4 изображения разных размеров. С помощью тега <picture> подключить одно изображение, но оно будет брать разные исходные изображения на разных размерах экрана.
+
+https://rutube.ru/video/fb1864170ab76a01bf064a7d2f39e6ea/
+https://rutube.ru/play/embed/fb1864170ab76a01bf064a7d2f39e6ea/
+
+16:9  => 9 / 16 * 100 = 56.25
+4:3   => 3 / 4 * 100 = 75
+
+an + b, где a, b - целые числа, a n - счетчик (0,1,2,3,...)
+
+CSS - переменные
+
+
+Montserrat
+
+fivicon.ico
+
+
+
+index.html
+style.css
+images
+favicon.svg
+
+data-label
+
+Ctrl + H
+
+
+высота grid-блока: 468px
+общая доля: 1.5 + 3 + 4.5 = 9
+
+Первая строка: 1.5fr / 9fr * 468px = 78px
+Вторая строка: 3fr / 9fr * 468px = 156
+Третья строка: 4.5fr / 9fr * 468px = 234
+
+
+grid: grid-template-rows / grid-template-columns
+
+grid-row: grid-row-start / grid-row-end
+grid-column: grid-column-start / grid-column-end
+
+grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end
+
+
+git init
+- инициализация репозитория
+
+git status
+- проверка статуса репозитория
+
+git add -A
+		--all
+		index.html
+		.
+- добавили файлы под версионный контроль
+
+		
