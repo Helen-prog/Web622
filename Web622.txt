@@ -240,3 +240,49 @@ git push -u origin master
 3) git push
 
 https://github.com/Helen-prog/Web622/tree/master/html/grid/maket
+
+git clone https://github.com/Helen-prog/Web622.git
+
+4) git pull
+- забрать данные с github репозитория в локальный репозиторий
+
+
+JavaScript
+
+script.js
+
+
+Ctrl + / 
+// - строчный комментарий
+
+Shift + Alt + A
+/* блочный комментарий */
+
+
+Типы данных
+- простые (примитивные)
+	number (целое или вещественное число)
+	string (строка)
+	boolean (true / false)
+	undefind
+	null
+- объекты
+
+
+NaN - Not a Number
+
+
+False => 0, 0.0, "", false, undefined, null
+
+1) от 0 по 9
+2) 
+ворона - 1
+вороны - 2,3,4
+ворон - 5,6,7,8,9,0
+
+
+копейка - 1, 21, 31, 41, 91
+копейки - 2, 42, 82
+
+Исключения:
+11
