@@ -37,7 +37,7 @@ console.log(b); */
 let name = "Земля"
 let people = "7 млрд."
 let star = "Солнце"
- 
+
 alert(`Мы живем на планете ${name}, она делает один оборот вокруг ${star} за ${days} дней. Население нашей планеты составляет примерно ${people} человек.`) */
 
 
@@ -145,7 +145,7 @@ alert(`Мы живем на планете ${name}, она делает один
 // let a = 1;
 // let b = ++a;
 // let c = b + 5 + a; // 2 + 5 + 2 = 9
-// console.log(c);  
+// console.log(c);
 
 // console.log(5 > 3);
 // console.log(5 < 3);
@@ -190,7 +190,7 @@ alert("Сумма чисел: " + sum); */
 // ch == num ? alert("Угадали!") : ch < num ? alert("Загаданное число больше") : alert("Загаданное число меньше");
 
 // let temp = prompt("Введите температуру");
-// let res = temp > 30 ? "Очень жарко" 
+// let res = temp > 30 ? "Очень жарко"
 // : temp > 20 ? "Тепло"
 // : temp > 10 ? "Прохладно"
 // : temp > 0 ? "Холодно"
@@ -198,7 +198,7 @@ alert("Сумма чисел: " + sum); */
 
 // alert(res);
 
-/* 
+/*
 if(условие){
     истина
 } else {
@@ -229,9 +229,9 @@ if(условие){
 
 
 // if(a){
-//     console.log("TRUE");    
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
 // let a = 16;
@@ -299,53 +299,53 @@ if(условие){
 // }
 
 // if(5 == 5 && 5 > 2){ // true && true
-//     console.log("TRUE");    
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
 // if(5 == 2 && 5 > 2){ // false && true
-//     console.log("TRUE");    
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
-// if(5 == 5 && 5 > 7){ //  true && false 
-//     console.log("TRUE");    
+// if(5 == 5 && 5 > 7){ //  true && false
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
 
-// if(5 == 2 && 5 > 7){ //  false && false 
-//     console.log("TRUE");    
+// if(5 == 2 && 5 > 7){ //  false && false
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
 // if(5 == 5 || 5 > 2){ // true || true
-//     console.log("TRUE");    
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
 // if(5 == 2 || 5 > 2){ // false || true
-//     console.log("TRUE");    
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
-// if(5 == 5 || 5 > 7){ //  true || false 
-//     console.log("TRUE");    
+// if(5 == 5 || 5 > 7){ //  true || false
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
 
-// if(5 == 2 || 5 > 7){ //  false || false 
-//     console.log("TRUE");    
+// if(5 == 2 || 5 > 7){ //  false || false
+//     console.log("TRUE");
 // } else {
-//     console.log("FALSE");    
+//     console.log("FALSE");
 // }
 
 
@@ -371,7 +371,7 @@ if(условие){
 // let trg1 = prompt('Введите первую сторону: ', 10);
 // let trg2 = prompt('Введите вторую сторону: ', 20);
 // let trg3 = prompt('Введите третью сторону: ', 30);
- 
+
 // if(trg1 === trg2 && trg2 === trg3) {
 //   console.log('Треугольник равносторонний');
 // } else if (trg1 === trg2 || trg2 === trg3 || trg3 === trg1) {
@@ -386,7 +386,7 @@ if(условие){
 //     if(ch == 1){
 //         alert(`На ветке ${ch} ворона`);
 //     } else if(ch >= 2 && ch <= 4){
-//        alert(`На ветке ${ch} вороны`); 
+//        alert(`На ветке ${ch} вороны`);
 //     } else {
 //         alert(`На ветке ${ch} ворон`);
 //     }
@@ -394,18 +394,286 @@ if(условие){
 //     alert("Непустимое значение");
 // }
 
-let ch = prompt("Введите количество ворон", 5);
+// let ch = prompt("Введите количество ворон", 5);
 
-if(ch >= 0 && ch <= 9){
-    if(ch == 1){
-        alert(`На ветке ${ch} ворона`);
-    } 
-    if(ch >= 2 && ch <= 4){
-       alert(`На ветке ${ch} вороны`); 
-    } 
-    if(ch >= 5 && ch <= 9 || ch == 0) {
-        alert(`На ветке ${ch} ворон`);
-    }
-} else {
-    alert("Непустимое значение");
+// if(ch >= 0 && ch <= 9){
+//     if(ch == 1){
+//         alert(`На ветке ${ch} ворона`);
+//     }
+//     if(ch >= 2 && ch <= 4){
+//        alert(`На ветке ${ch} вороны`);
+//     }
+//     if(ch >= 5 && ch <= 9 || ch == 0) {
+//         alert(`На ветке ${ch} ворон`);
+//     }
+// } else {
+//     alert("Непустимое значение");
+// }
+
+/*
+switch(условие){
+    case значение_1:
+        код;
+    break;
+    case значение_2:
+        код;
+    break;
+    default:
+        код;
+}
+*/
+
+// let a = +prompt("Введите число:");
+// switch (a) {  // a === 1
+//     case 1:
+//         alert("Код 1");
+//         break;
+//     case 2:
+//         alert("Код 2");
+//         break;
+//     case 3:
+//         alert("Код 3");
+//         break;
+//     default:
+//         alert("Я таких значений не знаю");
+// }
+
+// let a = +prompt("Введите результат '2 + 2':");
+// switch (a) {
+//     case 4:
+//         alert("Верно");
+//         break;
+//     case 3:
+//     case 5:
+//         alert("Не верно");
+//         break;
+//     default:
+//         alert("Я таких значений не знаю");
+// }
+
+// let day = "четверг234";
+
+// switch(day){
+//     case "суббота":
+//     case "восресенье":
+//         alert("Это выходной день");
+//         break;
+//     case "понедельник":
+//     case "вторник":
+//     case "среда":
+//     case "четверг":
+//     case "пятница":
+//         alert("Это рабочий день");
+//         break;
+//     default:
+//         alert("Такого дня недели не существует");
+// }
+
+// let m = +prompt("Введите номер месяца:");
+// let n;
+// switch(m){
+//     case 1: n = "январь"; break;
+//     case 2: n = "февраль"; break;
+//     case 3: n = "март"; break;
+//     case 4: n = "апрель"; break;
+//     case 5: n = "май"; break;
+//     case 6: n = "июнь"; break;
+//     case 7: n = "июль"; break;
+//     case 8: n = "август"; break;
+//     case 9: n = "сентябть"; break;
+//     case 10: n = "октябрь"; break;
+//     case 11: n = "ноябрь"; break;
+//     case 12: n = "декабрь"; break;
+//     default: n = "Неправильный номер месяца";
+// }
+
+// alert("Вы ввели: " + n);
+
+// document.writeln("<p>Текст выведен <b>в окно браузера</b></p>");
+// document.writeln("<p><img src='1.jpg'></p>");
+
+// Цикл - конструкция повторения
+
+/*
+do...while(цикл с постусловием)
+do{
+    тело цикла
+} while(условие);
+*/
+
+// let i = 0;  // 5
+// do{
+//     document.writeln("Это номер: " + i + "<br>");
+//     i++;
+// } while(i < 5);  // 10 < 5
+
+// итерация - один шаг цикла
+
+// let i = 5;  // переменная счетчик
+// do{
+//     document.writeln("Это номер: " + i + "<br>");
+//     i--;
+// } while(i > 0);  //
+
+// let i = 0;  // переменная счетчик
+// do{
+//     document.writeln("Это номер: " + i + "<br>");
+//     i += 5;  // i = i + 5;
+// } while(i < 25);
+
+// let i = -1;
+// do {
+//     document.writeln("Квадрат " + ++i + " равен " + i ** 2 + "<br>");
+//     // i++;
+// } while (i < 7);
+
+/* while(цикл с предусловием)
+while(условие){
+    тело цикла;
+}
+*/
+
+// let i=0;
+// while(i<5){
+//     document.writeln("Это номер: " + i + "<br>");
+//     i++;
+// }
+
+// Написать программу, выводящую на экран целые числа от 1 до 30, за исключением чисел кратных трем.
+
+// let i = 1;
+// while(i <= 30){
+//     if(i % 3 != 0){
+//         document.writeln(i + " ");
+//     }
+//     i++;
+// }
+
+// Написать программу, вычисляющую сумму чисел в заданном диапазоне (Например: 5 и 10. Результат: 5+6+7+8+9+10=45).
+
+// let start = 5;
+// let end = 10;
+// let i = start;  // 5
+// let sum = 0;
+// while(i <= end){
+//     sum += i;  // sum = 5 + 6
+//     i++;
+// }
+// document.writeln(sum);
+
+// let start = +prompt("Введите 1 число: ");
+// let end = +prompt("Введите 2 число: ");
+
+// let sum = 0;
+// while(start <= end){
+//     sum += start;
+//     start++;
+// }
+// document.writeln(sum);
+
+// let i = 3;  // 0
+// while(i){  // false
+//     document.writeln(i + "<br>");
+//     i--;
+// }
+// let num, pr = 1;
+// do {
+//     num = prompt("Введите число: ", 10);
+//     if(num == 0){
+//         break;
+//     }
+//     pr *= num;
+// } while(true);
+// alert("Произведение: " + pr);
+
+// let i = 0;  // 3
+// while (i < 10) {
+//     if(i == 3){
+//         i++;
+//         continue;
+//     }
+//     if(i == 6){
+//         break;
+//     }
+//     document.writeln("Это номер: " + i + "<br>");
+//     i++;
+// }
+
+/* for (цикл со счетчиком) 
+for(инициализация_переменной;условие;измение_переменной){
+    тело цикла
+}
+*/
+
+// for(let i = 0; i < 5; i++){
+//     document.writeln("Это номер: " + i + "<br>");
+// }
+
+
+// let i = 0;  
+// do{
+//     document.writeln("Это номер: " + i + "<br>");
+//     i++;
+// } while(i < 5);  
+
+// for(let i = 0; i < 12; i++){
+//     if(i == 3){
+//         continue;
+//     }
+//     if(i == 6){
+//         break;
+//     }
+//     document.writeln("Это номер: " + i + "<br>");
+// }
+
+// let n = prompt("n =");  // "3"
+// let sum = 0;
+// let count = 0;
+
+// for (let i = 0; i < n; i++) {
+//     let num = +prompt("-> ", 10);   
+//     sum += num;
+//     if(num != 0){
+//         count++;
+//     }
+// }
+
+// document.writeln(sum / count);
+// let i = 0;
+// for (; ;) {
+//     if (i == 7) {
+//         break;
+//     }
+//     document.writeln(i + "<br>");
+//     i++;
+// }
+
+// for (let i = 0; i < 5; i++){
+//     document.writeln(i + "<br>");
+// }
+
+// document.writeln("i = " + i);
+// let b = 20;
+// let a = 5;
+// if(a == 5){
+//     let b = 10;   
+//     console.log("inner b = " + b);
+// } 
+// console.log(b);
+
+// Найти сумму целых положительных чисел больших 5, меньших 30 и кратных 3.
+
+// let sum = 0;
+// for(let i=5; i<=30; i++){
+//     if(i % 3 == 0){
+//         sum += i;
+//         console.log(i);
+//     }     
+// }
+// document.writeln(sum);
+
+
+let count = prompt("Укажите количество звездочек");  // 5
+for(let i = 0; i < count; i++){  // 5 < 5
+    document.writeln("*<br>");
 }
