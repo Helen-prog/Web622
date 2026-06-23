@@ -673,7 +673,242 @@ for(инициализация_переменной;условие;измени�
 // document.writeln(sum);
 
 
-let count = prompt("Укажите количество звездочек");  // 5
-for(let i = 0; i < count; i++){  // 5 < 5
-    document.writeln("*<br>");
-}
+// let count = prompt("Укажите количество звездочек");  // 5
+// for(let i = 0; i < count; i++){  // 5 < 5
+//     document.writeln("*<br>");
+// }
+
+// for (let i = 0; i < 4; i++) {  // 2
+//     document.writeln("+++ "+ i +"<br>");
+//     for(let j = 0; j < 2; j++){  // 0
+//         document.writeln("---------- " + j + "<br>");        
+//     }
+// }
+// let tr = prompt("Введите количество строк");
+// let td = prompt("Введите количество столбцов");
+// let symbol = prompt("Введите символ");
+// document.writeln("<table border='1' style='color: red'>");
+// for (let i = 0; i < tr; i++) {
+//     document.writeln("<tr>");
+//     for (let j = 0; j < td; j++) {
+//         document.writeln("<td>" + symbol + "</td>");
+//     }
+//     document.writeln("</tr>");
+// }
+// document.writeln("</table>");
+
+// document.writeln("<table border='1'>");
+// for (let i = 1; i < 11; i++) {
+//     document.writeln("<tr>");
+//     for (let j = 1; j < 11; j++) {
+//         if(j % 2 == 0){
+//             document.writeln("<td bgcolor='red'>" + i * j + "</td>");
+//         } else {
+//              document.writeln("<td bgcolor='yellow'>" + i * j + "</td>");
+//         }       
+//     }
+//     document.writeln("</tr>");
+// }
+// document.writeln("</table>");
+
+// Массив
+// let x = 5;
+// let y = 2;
+// let z = 8;
+
+// let coords = [5, 2, 8];
+
+// console.log(coords);
+// console.log(coords[1]);
+// console.log(coords[2]);
+// console.log(coords[0]);
+
+// let arr1 = new Array(2,6,8);
+// console.log(arr1);
+
+// let arr2 = [2, 6, 8];
+// console.log(arr2);
+
+
+// let arr1 = new Array(5);
+// console.log(arr1);
+
+// let arr2 = [5];
+// console.log(arr2);
+
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// document.writeln(arr);
+// console.log(arr);
+// console.log(arr.length);
+// arr.length = 3;
+// console.log(arr);
+
+// arr.length = 6;
+// console.log(arr);
+
+// arr.length = 0;
+// console.log(arr);
+
+// let arr = [5, 9, -3, -1, 4, -8, 7, 2, 6];
+// for(let i = 0; i < arr.length; i++){
+//     document.writeln(arr[i] ** 2 + "<br>");    
+// }
+
+// let arr = [5, 9, -3, -1, 4, -8, 7, 2, 6];
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] < 0){
+//         arr[i] = arr[i] * -1;
+//     }
+//     document.writeln(arr[i] + "<br>");    
+// }
+
+// Посчитать в массиве сумму всех отрицательных элементов
+
+// let a = 0
+// let arr = [5, 9, -3, -1, 4, -8, 7, 2, 6];
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] < 0){
+//         a += arr[i]; // a = a + arr[i];
+//     }
+//     // document.writeln(arr[i]);
+// }
+// alert(a)
+
+// let arr = new Array();
+// arr[0] = 15;
+// arr[1] = 6;
+// arr[2] = 9;
+// arr[3] = 4;
+// console.log(arr);
+
+// arr[10] = 59;
+// console.log(arr);
+
+// console.log(arr[5]);
+// console.log(arr[20]);
+
+// let mas = new Array(5);
+// for (let i = 0; i < mas.length; i++) {
+//     mas[i] = prompt("Введите " + (i + 1) + " элемент массива");
+// }
+// console.log(mas);
+// for (let i = mas.length - 1; i >= 0; i--) {
+//     document.writeln(mas[i] + " ");
+// }
+
+// let n = prompt("Введите количество элементов массива");
+// let mas = [];
+// for (let i = 0; i < n; i++) {
+//     if (n > 5) {
+//         mas[i] = 0;
+//     } else {
+//         mas[i] = +prompt("-> ");
+//     }
+// }
+// for (let i = 0; i < mas.length; i++) {
+//     document.writeln(mas[i] + " ");
+// }
+
+// let arr = [2, 4, 5, "Игорь", 1.5, true];
+// console.log(arr);
+
+// let mas = [[2,1,1], [6,3,7], [8,5,6]];
+// // console.log(mas.length);
+// // console.log(mas[1][2]);
+// // console.table(mas);
+
+// // document.writeln(mas);
+
+// for(let i = 0; i < mas.length; i++){
+//    for(let j = 0; j < mas[i].length; j++){
+//     document.writeln(mas[i][j] + "&nbsp;");    
+//    }
+//    document.writeln("<br>");   
+// }
+
+// let questions = ["На ноль делить можно?", "Волга впадает в Каспийское море?", "Атмосферное давление увеличивается с высотой", "2 x 2 будет 8?", "Дельфин - это рыба?", "Мадонна - это настоящее имя певицы", "Первая мировая война началась 1 сентября 1939 года"];
+
+// let correctAnswers = [false, true, false, false, false, false, false];
+
+// let res = new Array();
+// let sum = 0;
+
+// for (let i = 0; i < questions.length; i++) {
+//     let answer = confirm(questions[i]);
+//     if (answer == correctAnswers[i]) {
+//         res[i] = 10;
+//         sum += res[i];
+//     } else {
+//         res[i] = 0;
+//     }
+// }
+
+// console.log(res);
+// console.log(sum);
+
+// document.writeln("<table border='1' width='500'>");
+
+// document.writeln("<tr>");
+// document.writeln("<th>Вопрос</th>");
+// document.writeln("<th>Баллы</th>");
+// document.writeln("</tr>");
+
+// for(let i=0; i<questions.length; i++){
+//     document.writeln("<tr>");
+//     document.writeln("<td>" + questions[i] + "</td>");
+//     document.writeln("<td>" + res[i] + "</td>");    
+//     document.writeln("</tr>");    
+// }
+
+// document.writeln("<tr>");
+// document.writeln("<th>Итого</th>");
+// document.writeln("<th>" + sum + "</th>");
+// document.writeln("</tr>");
+
+// document.writeln("</table>");
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for(let elem of arr){
+//     console.log(elem ** 2);    
+// }
+
+/* let text1 = document.getElementById("text_1");
+console.log(text1);
+console.log(text1.textContent);
+
+text1.textContent = "Новое <b>содержимое</b>";
+
+let text2 = document.getElementById("text_2");
+text2.innerHTML = "Новое содержимое с <b>html разметкой</b>"; */
+
+// let res = +prompt("Выбери изображение", "1-собака, 2-кот, 3-птица, 4-рыба");
+// document.writeln("<div id='image'></div>");
+// let img = document.getElementById("image");
+
+// switch (res) {
+//     case 1:
+//         img.innerHTML = "<img src='img/dog.jpg'>";
+//         break;
+//     case 2:
+//         img.innerHTML = "<img src='img/cat.jpg'>";
+//         break;
+//     case 3:
+//         img.innerHTML = "<img src='img/bird.jpeg'>";
+//         break;
+//     case 4:
+//         img.innerHTML = "<img src='img/fish.jpeg'>";
+//         break;
+//     default:
+//         alert("Такого изображения нет");
+// }
+
+let tag = document.getElementsByTagName("p")[2];
+console.log(tag);
+tag.innerHTML = "Hello <u>tag</u>";
+tag.style.color = "blue";
+tag.style.fontWeight = "bold";
+
+// list-style-type => listStyleType
