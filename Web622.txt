@@ -290,3 +290,6 @@ False => 0, 0.0, "", false, undefined, null
 
 length = последний индекс массива + 1
 последний индекс массива = length - 1
+
+
+DOM (Document Object Model) - объектная модель документа

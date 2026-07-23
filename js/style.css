@@ -3,7 +3,7 @@
     padding: 50px;
 } */
 
-#container{
+/* #container{
     width: 400px;
     height: 400px;
     background: yellow;
@@ -14,4 +14,64 @@
     height: 50px;
     background: green;
     position: absolute;
+} */
+
+/* .active{
+    border: 5px solid green;
+}
+.alert{
+    border: 5px solid red;
+}
+.hidden{
+    display: none;
+    background-color: yellow;
+} */
+
+/* body{
+    padding: 30px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.brush{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    translate: -50% -50%;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 2;    
+}
+
+.paint{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    translate: -50% -50%;
+    background: green;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+/* .red {
+    border: 2px solid red;
+    background: #ffcccc;
+}
+
+.green {
+    border: 2px solid #00aa00;
+    background: #ddffdd;
+}
+
+p {
+    padding: 10px 20px;
+    border-radius: 6px;
+} */
+
+.cities{
+    display: none;
+}
+
+.cities.active{
+    display: inline-block;
 }

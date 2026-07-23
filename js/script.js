@@ -2127,33 +2127,707 @@ let имя = function(аргументы){
 // document.image.src = "blue_star.png";
 
 
-let array = new Array("2.jpg", "3.jpg", "4.jpg");
+// let array = new Array("2.jpg", "3.jpg", "4.jpg");
 
-document.writeln("<input type='button' value='<' name='left'>");
-document.writeln("<img src='" + array[0] + "' id='sl'>");
-document.writeln("<input type='button' value='>' name='right'>");
+// document.writeln("<input type='button' value='<' name='left'>");
+// document.writeln("<img src='" + array[0] + "' id='sl'>");
+// document.writeln("<input type='button' value='>' name='right'>");
 
 // document.getElementsByName("right")[0].addEventListener("click", next);
-console.log(document.right);
 
-document.right.addEventListener("click", next);
-document.getElementsByName("left")[0].addEventListener("click", prev);
+// document.getElementsByName("left")[0].addEventListener("click", prev);
 
-let image = document.getElementById("sl");
-let i = 0;
+// let image = document.getElementById("sl");
+// let i = 0;
 
-function next() {
-    i++;
-    if(i == array.length){
-        i = 0;
-    }
-    image.src = array[i];
-}
+// function next() {
+//     i++;
+//     if(i == array.length){
+//         i = 0;
+//     }
+//     image.src = array[i];
+// }
 
-function prev(){
-    i--;
-    if(i < 0){
-        i = array.length - 1;
-    }
-    image.src = array[i];
-}
+// function prev(){
+//     i--;
+//     if(i < 0){
+//         i = array.length - 1;
+//     }
+//     image.src = array[i];
+// }
+
+// let t = document.querySelectorAll("#clock img");
+// let imgTime = ["c0.gif", "c1.gif", "c2.gif", "c3.gif", "c4.gif", "c5.gif", "c6.gif", "c7.gif", "c8.gif", "c9.gif"];
+// clock();
+
+// function clock() {
+//     let time = new Date();
+//     let hours = time.getHours();
+//     let min = time.getMinutes();
+//     let second = time.getSeconds();
+
+//     getImg(hours, min, second);
+//     setTimeout(clock, 1000);
+// }
+
+// function getImg(h, m, s) {  // 18 44 2
+//     t[0].src = imgTime[parseInt(h / 10)];
+//     t[1].src = imgTime[h % 10];
+
+//     t[3].src = imgTime[Math.floor(m / 10)];  // 5
+//     t[4].src = imgTime[m % 10];
+
+//     if (s < 10) {
+//         t[6].src = imgTime[0];
+//         t[7].src = imgTime[String(s)[0]]
+//     } else {
+//         t[6].src = imgTime[String(s)[0]];
+//         t[7].src = imgTime[String(s)[1]];
+//     }
+// }
+
+
+// alert(document.documentElement.innerHTML);
+// alert(document.head.innerHTML);
+// alert(document.body.innerHTML);
+
+// let h1 = document.querySelector("h1").innerHTML;
+// console.log(h1);
+
+// let p = document.querySelector("p").firstChild.nodeValue;
+// let p = document.querySelector("p").childNodes[0].nodeValue;
+// console.log(p);
+
+// let h1 = document.querySelector("h1").firstChild;
+// // console.log(h1.nodeName);  // H1 
+// console.log(h1.nodeType);  // 
+
+
+// let elem = document.querySelector("#root");
+
+// let tag = document.createElement("p");  // <p></p>
+// let node = document.createTextNode("Новый текст!!!");  // "Новый текст!!!"
+// tag.append(node);  // <p>Новый текст!!!</p>
+
+
+// elem.append(tag);  // добавляет новый элемент последним дочерним элементов
+// elem.prepend(tag); // добавляет новый элемент первым дочерним элементов
+
+// elem.before(tag);  // добавляет новый элемент до выбранного 
+// elem.after(tag);  // добавляет новый элемент после выбранного 
+
+// elem.replaceWith(tag);  // новый элемент заменяет выбранный
+
+
+// let list = document.querySelector("ul");
+
+// let newItem = document.createElement("li");
+// // newItem.textContent = "Новый <u>элемент списка</u>";
+// newItem.innerHTML = "Новый <u>элемент списка</u>";
+
+// list.append(newItem);
+
+// let i = 1;
+// document.querySelector("#add").addEventListener("click", add);
+// document.querySelector("#move").addEventListener("click", change);
+
+// function change(){
+//     let elem = document.querySelector("#list2").lastChild;
+//     document.querySelector("#list1").append(elem);
+// }
+
+// function add(){
+//     let elem = document.createElement("li");
+//     elem.innerHTML = "Water" + i;
+//     document.querySelector("#list2").append(elem);
+//     i++;
+// }
+
+// let div = document.querySelector("#root");
+
+// div.insertAdjacentHTML("beforebegin", "<p>До выбранного элемента</p>");
+// div.insertAdjacentHTML("afterend", "<p>После выбранного элемента</p>");
+// div.insertAdjacentHTML("afterbegin", "<p>Первым внутри выбранного элемента</p>");
+// div.insertAdjacentHTML("beforeend", "<p>Последним внутри выбранного элемента</p>");
+
+// let one = document.querySelector("#p1");
+// // one.remove();
+// let two = document.querySelector("#p2");
+// two.after(one);
+
+// let ul = document.querySelector("ul");
+// let clone = ul.cloneNode(true);
+
+// ul.after(clone);
+
+// let list = document.querySelector("#list");
+// list.insertAdjacentHTML("beforebegin", "<h2>Список </h2><hr>");
+// let listInner = document.querySelector("h2");
+// listInner.insertAdjacentText("beforeend", "планет");
+// list.insertAdjacentHTML("afterend", "<hr>");
+// let hr = document.querySelectorAll("hr")[1];
+// let h4 = document.createElement("h4");
+// h4.innerHTML = "Конец списка";
+// hr.insertAdjacentElement("afterend", h4);
+
+
+// let idRemove = setInterval(function(){
+//     let li = document.querySelector("li:last-child");
+//     if(li === null){
+//         clearInterval(idRemove);
+//         // alert("Список удален");
+//         list.insertAdjacentHTML("afterbegin", "<li>Список удален</li>")
+//     } else {
+//         li.remove();
+//     }    
+// }, 500);
+
+// let div = document.querySelector("div");
+// div.className = "alert";
+
+// let activeDiv = document.querySelector(".active");
+// // activeDiv.className = "hidden";
+// activeDiv.classList.add("hidden");
+// activeDiv.classList.remove("hidden");
+
+// activeDiv.classList.toggle("hidden");
+// activeDiv.classList.replace("active", "alert");
+
+// let brush = document.createElement("div");
+// brush.classList.add("brush");
+
+// brush.hidden = true;
+
+// document.addEventListener("mouseover", function(){    
+//     brush.hidden = false;
+// })
+
+// document.addEventListener("mouseout", function(){
+//     brush.hidden = true;
+// });
+
+// document.addEventListener("mousemove", function(event){
+
+//     brush.style.left = `${event.clientX}px`;
+//     brush.style.top = `${event.clientY}px`;
+//     // console.log(event.buttons);
+//     if(event.buttons === 1){
+//         let paint = document.createElement("div");
+//         paint.classList.add("paint");
+
+//         paint.style.left = `${event.clientX}px`;
+//         paint.style.top = `${event.clientY}px`;
+
+//         document.body.append(paint);
+//     }
+// });
+
+// document.addEventListener("mousedown", function(){
+//     // console.log("Событие сработало");
+//     brush.style.scale = "0.8";
+// });
+
+// document.addEventListener("mouseup", function(){
+
+//     brush.style.scale = "1";
+// });
+
+// document.body.append(brush);
+
+// let frogImg = document.querySelector("#green-frog");
+
+// console.log(frogImg.id);
+// console.log(frogImg.className);
+// console.log(frogImg.alt);
+// console.log(frogImg.title);
+// console.log(frogImg.src);
+// console.log(frogImg.getAttribute("src"));
+// frogImg.title = "Новый текст подсказки";
+
+// console.log(frogImg.getAttribute("data-frog"));
+// console.log(frogImg.dataset.frog);
+
+// frogImg.setAttribute("src", "4.jpg");
+// // frogImg.removeAttribute("src");
+
+// console.log(frogImg.hasAttribute("src"));
+
+
+// let form = document.querySelector("form");
+// console.log(form.elements);
+// console.log(form.length);
+// console.log(form.name);
+// console.log(form.action);
+// console.log(form.method);
+
+// document.form1.style.background = "silver";
+
+// document.forms[0].style.margin = "20px";
+// document.forms["form1"].style.padding = "16px";
+
+// document.forms.form1.style.border = "2px dotted gray";
+
+// let key = form.elements["name1"];
+// console.log(key);
+
+// document.form1.name1.style.color = "blue";
+// document.form1["name1"].style.background = "aqua";
+
+// let txt = document.querySelector("#text1");
+// let but = document.querySelector("button");
+
+// but.addEventListener("click", content);
+
+// function content(){
+//     alert(txt.value);
+// }
+
+// let text = document.querySelector("input");
+// let output = document.querySelector("#length");
+
+// text.addEventListener("input", function(){
+//     output.textContent = text.value.length;    
+// });
+
+// let form = document.querySelector("form");
+// form.addEventListener("submit", function(event){
+//     event.preventDefault();
+//     console.log("Сохраненне данные:", form.elements.values.value);
+// })
+
+// let reg = document.querySelector(".register");
+// let h2 = document.querySelector("h2");
+// let win = document.createElement("p");
+// h2.after(win);
+
+// reg.addEventListener("submit", function(event){
+//     event.preventDefault();
+
+//     let login = reg.login.value;
+//     let password = reg.psw.value;
+//     let password2 = reg.psw2.value;
+//     let errors = "";
+
+//     if(login == "" || password == "" || password2 == ""){
+//         win.className = "red";
+//         win.textContent = "Все поля должны быть заполнены";
+//         return;
+//     }
+
+//     if(password != password2){
+//         errors += "Пароли не совпадают<br>";
+//     }
+
+//     if(password.length < 6){
+//         errors += "Слишком короткий пароль";
+//     }
+
+//     if(errors == ""){
+//         win.className = "green";
+//         win.textContent = "Регистрация прошла успешно";
+//     } else{
+//          win.className = "red";
+//          win.innerHTML = errors;
+//     }
+// })
+
+// let checkbox = document.querySelector("#purple");
+// checkbox.addEventListener("change", function(){
+//     document.body.style.background = checkbox.checked ? "mediumpurple" : ""; 
+// })
+
+
+// let btn = document.querySelector("#btn");
+// btn.addEventListener("click", () => {
+//     let checkboxes = document.querySelectorAll("input[name='language']:checked");
+//     console.log(checkboxes);
+//     console.log(Array.from(checkboxes));
+
+//     let selectedLanguages = Array.from(checkboxes).map(checkbox => checkbox.value);
+//     alert("Выбранные языки: " + selectedLanguages.join(", "));
+// });
+
+// let choose = document.querySelector("input[type='button']");
+
+// choose.addEventListener("click", chooseColor);
+
+// function chooseColor(){
+//     let f = document.form3;
+
+//     console.log(f.radio2.length);
+//     for(let i=0; i<f.radio2.length; i++){
+//         if(f.radio2[i].checked){
+//             document.body.style.background = f.radio2[i].value;
+//         }
+//     }
+// }
+
+// function chooseColor() {
+//     let f = document.form3;
+//     document.body.style.background = f.radio2.value;
+// }
+
+// let f = document.form3;
+// for(let i=0; i<f.radio2.length; i++){
+//     f.radio2[i].addEventListener("change", chooseColor);  // input
+// }
+
+// function chooseColor(event) {
+//     let f = document.form3;
+//     document.body.style.background = event.target.value;
+// }
+
+
+// let input = document.querySelectorAll("input[type='checkbox']");
+// // console.log(input);
+
+// for (let i = 0; i < input.length; i++) {
+//     input[i].addEventListener("click", checkAll);    
+// }
+
+// let numChecked;
+// function checkAll(){
+//     numChecked = 0;
+//     for (let i = 0; i < input.length; i++) {
+//         if(input[i].checked){ //&& input[i].type == "checkbox"
+//             numChecked++;
+//         }
+//     }
+//     if(numChecked == 3){
+//         for (let i = 0; i < input.length; i++) {
+//             if(!input[i].checked){ // && input[i].type == "checkbox"
+//                 input[i].disabled = true;
+//             }
+//         }
+//     } else {
+//         for (let i = 0; i < input.length; i++) {
+//             input[i].disabled = false;
+//         }
+//     }
+//     // console.log(numChecked);    
+// }
+
+// let languages = document.querySelector("#language");
+// let languageOutput = document.querySelector("#languageOutput");
+
+// let languageOptions = ["Python", "JavaScript", "C++", "Java"];
+
+// languages.innerHTML = languageOptions.map(language => `
+//     <div>
+//         <input type='radio' name='language' value='${language}' id="${language}">
+//         <label for='${language}'>${language}</label>
+//     </div>
+//     `).join(" ");
+
+// let radioButtons = document.querySelectorAll("input[name='language']");
+// for(let radioButton of radioButtons){
+//     radioButton.addEventListener("change", showSelectedLanguage);
+// }
+
+// function showSelectedLanguage(){
+//     if(this.checked){
+//         languageOutput.innerHTML = `Вы выбрали: ${this.value}`;
+//     }
+// }
+
+
+// let city = document.querySelector("#city");
+
+// city.addEventListener("change", setImage);
+
+// function setImage(){
+//     let cities = city.selectedIndex;
+//     let options = city.options;
+//     let code = options[cities].value;
+
+//     let div = document.querySelector("#image");
+//     div.innerHTML = "<img src='img/" + code + ".png'>";
+
+// }
+
+// let countries = document.querySelector("#countries");
+
+// let ruCities = document.querySelector("#ru");
+// let byCities = document.querySelector("#by");
+
+// countries.addEventListener("change", function(){
+//     document.querySelector(".cities.active").classList.remove("active");
+
+//     if(this.value == "ru"){
+//         ruCities.classList.add("active");
+//     }
+
+//     if(this.value == "by"){
+//         byCities.classList.add("active");
+//     }
+// })
+
+// let gas = document.querySelectorAll(".petrol");
+
+// for (let i = 0; i < gas.length; i++) {
+//     gas[i].addEventListener("click", function(){
+//         let gallons = document.querySelector(".gallons").value;
+//         let amount = this.getAttribute("data-index");
+
+//         let res = gallons * amount;
+//         let sum = document.querySelector(".sum");
+//         sum.innerHTML = res;        
+//     })    
+// }
+
+// document.getElementById("slider").addEventListener("input", function(){
+//     document.getElementById("slider-value").textContent = this.value;
+// })
+
+// let form = document.getElementById("myForm");
+
+// form.addEventListener("submit", function(event){
+//     event.preventDefault();
+
+//     let formData = new FormData(form);
+//     console.log("Username:", formData.get('username'));
+//     console.log("Password:", formData.get('password'));
+
+// })
+
+// let form = document.getElementById("myForm");
+
+// form.addEventListener("submit", function(event){
+//      event.preventDefault();
+
+//     let formData = new FormData(form);
+//     if(formData.get('username').length < 3){
+//         alert("Имя пользователя должно быть более 3 символов");
+//     }
+// })
+
+// Регулярные выражения
+/* Методы:
+search - возвращает позицию, на которой регулярное выражение совпадает с вызывающей строкой, или "-1", если совпадений нет
+
+match - получает все совпадения в регулярным выражением
+
+replace - поиск и замена
+
+split - делит строку на массив, разбивая ее по указанной подстроку
+
+test - проверяет есть ли совпадение с шаблоном регулярного выражения. Возвращает true или false
+*/
+
+// let reg = /шаблон/флаги;
+// let reg = new RegExp("шаблон", "флаги");
+
+
+
+
+
+// let str = "Я ищу совпадения в 2026 году. Hello_World  2-26.";
+// document.writeln(str + "<br>");
+
+// let regexp = /ищу5/;
+// document.writeln(str.search(regexp) + "<br>");
+// document.writeln(str.match(regexp) + "<br>");
+// document.writeln(regexp.test(str) + "<br>");
+
+// let regexp = /[оая]/g;
+// let regexp = /я/gi;
+// let regexp = /[А-яЁё]/g;
+// let regexp = /[a-zA-Z]/g;
+// let regexp = /[^0-9]/g;
+// let regexp = /[0-9]{2,5}/g;
+// let regexp = /Я ищу/g;
+// let regexp = /\W/g;
+// let regexp = /^[а-я]{1,}\s[а-я]{1,}/gi;
+// let regexp = /\w{1,}$/gi;
+// let regexp = /\./gi;
+// document.writeln(str.match(regexp) + "<br>");
+
+/* Флаги
+g (global) - искать все совпадения с шаблоном поиска (глобальный поиск)
+i (ignoreCase) - регистро независимый поиск
+m (multiline) - многострочный поиск
+*/
+
+/* Диапазон
+[0-9] - любая цифра от 0 по 9, [2-8]
+[А-яЁё] - русский алфавит
+[A-Za-z] - английский алфавит
+
+\d (digit) - любая цифра
+\s (space) - пробельный символ, включая табуляцию и перевод строки
+\w (word) - любая цифра, буква (англ. алфавит) и символ подчеркивания
+
+\D - все кроме цифр
+\S - не пробел
+\W - все кроме цифр, букв (англ. алфавит) и символов подчеркивания
+*/
+
+/* Количество повторений
+{4} - количество символов идущий подряд 
+{1,} - от 1 до бесконечного количества повторений
+{2,5} - от 2 по 5 повторений
+
++ - от 1 до бесконечности {1,}
+? - от 0 до 1  {0,1}
+* - от 0 до бесконечности {0,}
+*/
+
+/* 
+^ - начало строки (перед последовательностью ничего не должно быть)
+$ - конец строки (после последовательностью ничего не должно быть)
+*/
+
+// function lowerCase(str){
+//     return str.replace(/[А-ЯЁ]/g, u => u.toLowerCase());
+// }
+
+// console.log(lowerCase("НесКолько СлОв"));
+
+// let html = `
+//     <table>
+//         <tr>
+//             <td bgcolor="#CCC">
+//                 <img scr="222.png">
+//             </td>
+//             <td bgcolor="#009933">
+//                 <img scr="1f3.png">
+//             </td>
+//             <td bgcolor="#00ccdd">
+//                 <img scr="fff.png">
+//             </td>
+//         </tr>
+//     </table>
+// `;
+
+// let exp = /#([0-9a-f]{3}){1,2}/ig;
+// console.log(html.match(exp));
+
+// let exp = /\d\d[:-]\d\d/g; 
+// let exp = /\d{2}[:-]\d{2}/g; 
+// console.log("Завтрак в 09:00. Ужин в 21-30".match(exp));
+
+
+// function validateEmail(email){
+//     let reg = /^[\w.%+-]{1,}@[a-z0-9.-]{1,}\.[a-z]{2,}$/i;
+//     return reg.test(email);
+// }
+
+// console.log(validateEmail("user@example.com"));
+// console.log(validateEmail("user@.com"));
+// console.log(validateEmail("userexample.com"));
+
+// let st = `JavaScript
+// javascript
+// JAVASCRIPT
+// `;
+
+// console.log(st.match(/^\w{1,}/gm));
+
+// let st = "+7(903)-123-45-67";
+// console.log(st.match(/\d+/g));
+
+// console.log("100 10 1".match(/10*/g));
+
+// let s = "10, ++20, --8, 5";
+// console.log(s.match(/[+-]?\d+/g));
+
+
+// let reg = /html|css|java(script)?/gi;
+// let st = "Сначала появился язык Java, затем HTML, потом JavaScript";
+// console.log(st.match(reg));
+
+// let html = `
+//     <b>my text.erwer</b>
+//     <img src="222.jpg">
+//     <span>else</span>
+//     <img src="fgh222.png">
+//     <img src="fgdfg.bmp">
+//     <img src="222.gif">
+// `;
+
+// let exp = /\w+\.(gif|jpg|jpeg|png|bmp)/ig;
+// console.log(html.match(exp));
+
+
+// function validatePhoneNumber(phoneNumber){
+//     let ex = /^(\+7|8)?\d{10}$/;
+//     return ex.test(phoneNumber);
+// }
+
+// // let num = "+79123456789";
+// // let num = "89123456789";
+// let num = "9123456789";
+
+// if(validatePhoneNumber(num)){
+//     console.log("Номер телефона валиден");    
+// } else {
+//     console.log("Номер телефона невалиден");    
+// }
+
+// console.log("aaa".replace("a", "b"));
+// console.log("aaa".replace(/a/g, "b"));
+
+// let text = "I kill you black dog";
+// let exp = /(book|kill|black)/ig;
+// console.log(text.replace(exp, "***"));
+
+
+// let regex = /<.+?>/g;
+// let regex = /<[^>]+>/g;
+// let st = "<p>Hello world</p>";
+// console.log(st.match(regex));
+
+// *?, +?, ??
+// {1,}?, {4,8}?
+
+// let str = "23.07.2026 789 456789"
+// console.log(str.match(/\d{2,4}?/g));
+// console.log(str.match(/\d{2}/g));
+
+// let html = "Дмитрий Васильев";
+// let exp = /(Дмитрий) Васильев/;
+// document.writeln(html.match(exp) + "<br>");
+
+
+// let reg = /(\w+\.)+\w+/g;
+// let domen = "site.com my.site.com".match(reg)
+// document.writeln(domen);
+// console.log(domen[0]);
+// console.log(domen[1]);
+
+
+// let st = "<span class='my'>";
+// let reg = /<(([a-z]+)\s*([^>]*))>/;
+// let res = st.match(reg);
+// console.log(res);
+// console.log(res[0]);
+// console.log(res[1]);
+// console.log(res[2]);
+// console.log(res[3]);
+
+// let st = "2026-07-23";
+// let exp = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/;
+// let group = st.match(exp).groups;
+
+// document.writeln(group.year + "<br>");
+// document.writeln(group.month + "<br>");
+// document.writeln(group.day + "<br>");
+
+// let st = "2026-07-23 2026-02-01";
+// let exp = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/g;
+// let group = st.matchAll(exp);
+
+// for(let gr of group){
+//     let {year, month, day} = gr.groups;
+//     document.writeln(`${day}.${month}.${year}<br>`);    
+// }
+
+// let st = "John Smith";
+// let re = /(\w+)\s(\w+)/;
+// document.writeln(st.replace(re, "$2 && $1"));
+
+let text = "red color: #F00 and green: #090";
+let exp = /(#[a-f0-9]{3})/ig;
+text = text.replace(exp, "<span style='color:$1'>$1</span>");
+document.writeln("<p>" + text + "</p>");
+
