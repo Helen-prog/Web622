@@ -2826,8 +2826,672 @@ $ - конец строки (после последовательностью �
 // let re = /(\w+)\s(\w+)/;
 // document.writeln(st.replace(re, "$2 && $1"));
 
-let text = "red color: #F00 and green: #090";
-let exp = /(#[a-f0-9]{3})/ig;
-text = text.replace(exp, "<span style='color:$1'>$1</span>");
-document.writeln("<p>" + text + "</p>");
+// let text = "red color: #F00 and green: #090";
+// let exp = /(#[a-f0-9]{3})/ig;
+// text = text.replace(exp, "<span style='color:$1'>$1</span>");
+// document.writeln("<p>" + text + "</p>");
 
+// function formatPhoneNumber(phone){
+//     const cleaned = phone.replace(/\D/g, '');
+//     document.writeln(cleaned + "<br>");
+
+//     return cleaned.replace(/(7|8)?(\d{3})(\d{3})(\d{2})(\d{2})/, '$1 ($2) $3-$4-$5');
+// }
+
+// console.log(formatPhoneNumber("+7 999 1234567"));
+// console.log(formatPhoneNumber("8 999 123 45 67"));
+// console.log(formatPhoneNumber("79991234567"));
+// console.log(formatPhoneNumber("9991234567"));
+
+// 7 (999) 123-45-67
+
+// document.writeln("Hello, Error!".match(/^(?=.*[eE][rR][rR][oO][rR]).{1,50}$/));
+
+// function validPassword(psw){
+//     let regExp = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/;
+//     return regExp.test(psw);
+// }
+
+// console.log(validPassword("Q!#Wer23"));
+
+
+// let registrationForm = document.getElementById("registrationForm");
+// let errorMessages = document.getElementById("errorMessages");
+
+// registrationForm.addEventListener("submit", function(event){
+//     event.preventDefault();
+
+//     let [username, email, password] = registrationForm.elements;
+
+//     errorMessages.innerHTML = "";
+
+//     if(!username.value.trim()){
+//         displayError("Имя пользователя обязательно");
+//         return;
+//     }
+
+//     if(!email.value.trim() || !isValidEmail(email.value)){
+//         displayError("Введите адрес электронной почты");
+//         return;
+//     }
+
+//     if(!password.value.trim() || !isStrongPassword(password.value)){
+//         displayError("Пароль должен состоять как минимум из 8 символов и содержать минимум одну заглавную букву, одну цифру и один специальный символ");
+//         return;
+//     }
+
+//     alert("Register successful!");
+//     registrationForm.reset();
+// });
+
+// function displayError(message){
+//     errorMessages.innerHTML += `<div>${message}</div>`
+// }
+
+// function isValidEmail(email){
+//     return /^[\w.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(email);
+// }
+
+// function isStrongPassword(password){
+//     return /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/.test(password);
+// }
+
+// let car = new Object();
+// let car1 = {};
+
+// let car = new Object();
+// car["type"] = "BMW";
+// car["color"] = "white";
+
+// console.log(car);
+
+// document.writeln(car["type"] + " " + car["color"] + "<br>");
+
+// let car = new Object();
+// car.type = "BMW";
+// car.color = "white";
+// document.writeln(car.type + " " + car.color + "<br>");
+
+// console.log(car);
+
+// let menu = {};
+// menu.width = 300;
+// menu.height = 200;
+// menu.title = "Menu";
+// console.log(menu);
+
+// document.writeln(menu.title + ": " + menu.width + " x " + menu.height + "<br>");
+
+// let menu = {
+//     width: 300,
+//     height: 200,
+//     title: "Menu"
+// };
+
+// document.writeln(menu.title + ": " + menu.width + " x " + menu.height + "<br>");
+// delete menu.width;
+// document.writeln(menu.title + ": " + menu.width + " x " + menu.height + "<br>");
+// console.log("width" in menu);
+
+// menu.age = 25;
+
+// for(let key in menu){
+//     document.writeln("<br>Ключ = " + key + ", значение = " + menu[key]);    
+// }
+
+// document.writeln("<br><br>Имена ключей: " + Object.keys(menu));
+// document.writeln("<br>Всего свойств: " + Object.keys(menu).length);
+
+// Object.keys(menu).forEach(function(key){
+//     document.writeln("<br>" + key + ": " + menu[key]);
+
+// })
+
+// console.log(Object.values(menu));
+// console.log(Object.entries(menu));
+
+// for(const prop of Object.entries(menu)){
+//     console.log(prop);
+
+// }
+
+// let car = {
+//     name: "Volvo",
+//     year: 2019,
+//     10: "ten"
+// };
+
+// console.log(car["10"] + car.year);
+
+// let obj = {
+//     name: "Гомер",
+//     color: {
+//         first: "yellow",
+//         second: "blue"
+//     },
+//     colors: [
+//         "black",
+//         "white",
+//         "red",
+//         "blue"
+//     ],
+//     hello: function(){
+//         document.writeln("Привет");        
+//     }
+// }
+
+// document.writeln(obj.name + " " + obj.color.second + " " + obj.colors[1]);
+// obj.hello();
+
+// console.log(obj);
+
+// let fil = obj.colors.filter(function(elem){
+//     return elem.length < 5;
+// })
+
+// document.writeln("<br>" + fil + "<br>");
+// let mas = obj.colors.map(function(elem, index, all){
+//     return "<br>" + elem + " " + index + " массив: " + all;
+// });
+
+// document.writeln("<br>" + mas + "<br>");
+
+// let mas = Object.keys(obj.color).map(function(elem){
+//     return "<br>" + elem + ": " + obj.color[elem];
+// });
+
+// document.writeln("<br>" + mas + "<br>");
+
+// let calc = {
+//     num1: 5,
+//     num2: 10,
+//     calculate: function(){
+//         // calc.res = calc.num1 * calc.num2;
+//         this.res = this.num1 * this.num2;
+//     }
+// }
+
+// calc.calculate();  // метод
+// document.writeln(calc.res);  // свойство (ключ)
+// console.log(calc.num1);
+
+
+// let x = 15, y = 10;
+
+// // let coords = {
+// //     x: x,
+// //     y: y,
+// //     calculate: function(){
+// //         document.writeln(this.x + this.y);        
+// //     }
+// // }
+
+// let coords = { x, y,
+//     calculate(){
+//         document.writeln(this.x + this.y);        
+//     }
+// }
+
+// coords.calculate();
+
+// let user = {
+//     login: {
+//         firstName: "Kate",
+//         lastName: "Pavlova"
+//     },
+//     psw: 'qwerty',
+//     role: 'guest'
+// }
+
+// // let {login: {firstName: f, lastName: l}, psw, role} = user;
+// let {login: {firstName: f, lastName: l}, ...rest} = user;
+// document.writeln(f + " " + l + " " + rest.psw + " " + rest.role);
+
+// let pers = {
+//     name: "Игорь",
+//     colors: [
+//         "красный",
+//         "белый",
+//         "синий",
+//         "черный"
+//     ],
+//     brand: "Bentley",
+//     start: function(){
+//         let color = Math.floor(Math.random() * 4);
+//         document.writeln(this.name + " выиграл автомобиль " + this.brand + ". Цвет: " + this.colors[color]);        
+//     }
+// }
+
+// let pers = {
+//     name: "Игорь",
+//     colors: [
+//         "красный",
+//         "белый",
+//         "синий",
+//         "черный"
+//     ],
+//     brand: "Bentley",
+//     start(){
+//         let {name, colors, brand} = this;
+//         let color = Math.floor(Math.random() * 4);
+//         document.writeln(name + " выиграл автомобиль " + brand + ". Цвет: " + colors[color]);        
+//     }
+// }
+
+// pers.start();
+
+// function Car(n, y){
+//     this.name = n;
+//     this.year = y;
+// }
+
+// Car.prototype.getAge = function(){
+//     return new Date().getFullYear() - this.year;
+// }
+
+// let ford = new Car("Ford", 2019);
+// console.log(ford);
+// console.log(ford.getAge());
+
+// let bmw = new Car("BMW", 2017);
+// console.log(bmw);
+// console.log(bmw.getAge());
+
+// function Car(n, y) {
+//     this.name = n;
+//     this.year = y;
+//     this.getAge = function () {
+//         return new Date().getFullYear() - this.year;
+//     }
+// }
+
+
+// let ford = new Car("Ford", 2019);
+// console.log(ford);
+// console.log(ford.getAge());
+
+// let bmw = new Car("BMW", 2017);
+// console.log(bmw);
+// console.log(bmw.getAge());
+
+
+// let form = document.form1;
+// form.addEventListener("submit", event => {
+//     event.preventDefault();
+
+//     let title = form.title.value;
+//     let text = form.text.value;
+//     let description = form.description.value;
+
+//     // console.log(title, text); 
+//     saveForm({title, text, description});   // {title: title, text: text}
+// });
+
+// function saveForm(obj){
+//      let formData = {
+//         date: new Date().toLocaleDateString(),
+//         ...obj
+//     }
+
+//     console.log("Form Data: ", formData);   
+// }
+
+// function saveForm(obj){
+//     let {title, text, description} = obj;
+/* function saveForm({title, text, description}){
+    let formData = {
+        date: new Date().toLocaleDateString(),
+        title, text, description
+    }
+
+    console.log("Form Data: ", formData);    
+} */
+
+
+// const b = 5;
+// console.log(b);
+// b = "Hello";
+// console.log(b);
+
+
+
+// const user = {name: "Sergey"};
+// console.log(user);
+// user = 10;
+
+// // user.name = "Igor";
+// console.log(user);
+
+// const mas = [1, 2, 3];
+// console.log(mas);
+// mas[1] = 100;
+// // mas = 5;
+// console.log(mas);
+
+
+// const book = {title: "Дюна", "1": "one"};
+// // const anotherBook = {title: "Дюна"};
+// const edition = {published: 2025, 1: "один"}
+// // const anotherBook = book;
+// const anotherBook = Object.assign({}, book, edition);
+// anotherBook.price = 315;
+
+// // console.log(book === anotherBook);
+// console.log(book);
+// console.log(edition);
+// console.log(anotherBook);
+
+// const personData = [["name", "Сергей", 45], ["age", 37]];
+// const person = Object.fromEntries(personData);
+// console.log(person);
+
+// const first = null;
+// const second = {name: "Сергей"}
+
+// function printName(person){
+//     console.log(person?.name);    
+// }
+
+// printName(second);
+// printName(first);
+// printName(second);
+
+// let person = {
+//     displayInfo: function (ms) {
+//         let self = this;
+
+//         setTimeout(function () {
+//             console.log(self);
+
+//             console.log("age:", self.age);
+//             console.log("name:", self.name);
+//             console.log("job:", self.job);
+//         }, ms);
+//     },
+//     age: 24,
+//     name: "Irina",
+//     job: "Programmer",
+// }
+
+
+/* let person = {
+    displayInfo: function (ms) {
+        setTimeout(function () {                      
+            console.log("age:", this.age);
+            console.log("name:", this.name);
+            console.log("job:", this.job);
+        }.bind(this), ms);
+    },
+    age: 24,
+    name: "Irina",
+    job: "Programmer",
+} */
+
+// let person = {
+//     displayInfo: function (ms) {
+//         setTimeout(() => {
+//             console.log("age:", this.age);
+//             console.log("name:", this.name);
+//             console.log("job:", this.job);
+//         }, ms);
+//     },
+//     age: 24,
+//     name: "Irina",
+//     job: "Programmer",
+// }
+
+// // console.log(this);
+
+// person.displayInfo(2000);
+
+// window.alert("Hello");
+
+// let modal = document.querySelector("#modal");
+// let but = document.querySelector("#btn");
+// let close = document.querySelector(".close");
+
+// but.addEventListener("click", function(){
+//     modal.style.display = "block";
+// });
+
+// close.addEventListener("click", function(){
+//     modal.style.display = "none";
+// });
+
+// window.addEventListener("click", function(event){
+//     if(event.target == modal){
+//        modal.style.display = "none"; 
+//     }    
+// })
+
+// console.log(document.querySelector("#root").getBoundingClientRect());
+// console.log(document.querySelector("#root").getBoundingClientRect().bottom);
+
+// console.log(window.location);
+// console.log(location);
+
+
+// location.href = "https://htmlbook.ru/";
+
+// console.log(history.length);
+// history.back();
+// history.forward();
+
+// console.log(navigator);
+// console.log(screen);
+
+
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+
+// const person1 = new Person("Андрей", 23);
+// console.log(person1);
+
+
+/* class Person2 {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    sayHi(){
+        document.writeln("Привет, " + this.name + "!");        
+    }
+}
+
+const person2 = new Person2("Андрей", 23);
+console.log(person2);
+person2.name = 89;
+console.log(person2.age);
+console.log(person2.name);
+person2.sayHi(); */
+
+// console.log(typeof Person2);
+
+/* class Rectangle {
+    constructor(width = 50, height = 5) {
+        this.width = width;
+        this.height = height;
+    }
+
+    area() {
+        return this.width * this.height;
+    }
+}
+
+const rectangle = new Rectangle(10, 20);
+console.log(rectangle.area());
+
+const rectangle2 = new Rectangle(30, 40);
+console.log(rectangle2.area());
+
+const rectangle3 = new Rectangle();
+console.log(rectangle3.area()); */
+
+
+// class Person {
+//     #name;
+//     #age = 1;
+//     constructor(name, age){
+//         this.#name = name
+//         this.age = age;
+//     }
+
+//     set age(year){
+//         if(year > 0 && year < 110){
+//             this.#age = year;
+//         }
+//     }
+
+//     print(){
+//         console.log(`Name: ${this.#name} Age: ${this.#age}`);
+//     }
+// }
+
+// const tom = new Person("Tom", "1248");
+// tom.print();
+// tom.age = "Hello";
+// tom.print();
+
+// class User{
+//     constructor(login){
+//         this.login = login;
+//     }
+
+//     get login(){
+//         return this._login;
+//     }
+
+//     set login(value){
+//         if(value.length < 6){
+//             console.log("Логин слишком короткий");
+//             return;           
+//         }
+//         this._login = value;
+//     }
+
+//     getLogin(){
+//         return this._login;
+//     }
+
+//     setLogin(value){
+//         if(value.length < 6){
+//             console.log("Логин слишком короткий");
+//             return;           
+//         }
+//         this._login = value;
+//     }
+// }
+
+// let user = new User("administrator");
+// console.log(user.login);
+// user.login = "admin_admin";
+// console.log(user.login);
+// // user.login = "admin";
+// // console.log(user.login);
+// // console.log(user.getLogin());
+// user.setLogin("admin");
+// console.log(user.getLogin());
+
+// class Animal {
+//     constructor(name){
+//         this.speed = 0;
+//         this.name = name;
+//     }
+
+//     run(speed){
+//         this.speed = speed;
+//         document.writeln(`${this.name} бежит со скоростью ${this.speed} км.ч.<br>`);        
+//     }
+
+//     stop(){
+//         this.speed = 0;
+//         document.writeln(`${this.name} стоит.<br>`);        
+//     }
+// }
+
+// class Rabbit extends Animal {
+
+//     constructor(name, earLength){
+//         super(name);
+//         this.earLength = earLength;
+//     }
+
+//     hide(){
+//         document.writeln(`${this.name} прячется!<br>`);        
+//     }
+
+//     stop(){
+//         document.writeln("========================<br>");        
+//         super.stop();
+//         this.hide();
+//         document.writeln("========================<br>");    
+//     }
+// }
+
+// let animal = new Animal("Мой питомец");
+// animal.run(80);
+// animal.stop();
+
+// let rabbit = new Rabbit("Белый кролик", 10);
+// rabbit.hide();
+// rabbit.run(5);
+// rabbit.stop();
+
+// document.writeln(rabbit.name);
+// document.writeln(rabbit.earLength);
+
+
+/* class Worker{
+    constructor(name, surname, rate, days){
+        this.name = name;
+        this.surname = surname;
+        this.rate = rate;
+        this.days = days;
+    }
+
+    get getFullName(){
+        return this.surname + " " + this.name;
+    }
+
+    getSalary(){
+        return this.rate * this.days;
+    }
+}
+
+
+const worker = new Worker("Иван", "Иванов", 10, 31);
+console.log(worker.name);
+console.log(worker.surname);
+console.log(worker.getFullName);
+console.log(worker.rate);
+console.log(worker.days);
+console.log(worker.getSalary()); */
+
+
+class Shape {
+    constructor(name) {
+        this.name = name;
+    }
+
+    calculateArea() {
+        console.log(`Это ${this.name} с площадью: `);
+    }
+}
+
+class Circle extends Shape{
+    constructor(radius){
+        super("Круг");
+        this.radius = radius;
+    }
+
+    calculateArea(){
+        super.calculateArea();
+        console.log((Math.PI * this.radius ** 2).toFixed(2));
+    }
+}
+
+const circle = new Circle(5);
+circle.calculateArea();

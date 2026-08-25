@@ -293,3 +293,6 @@ length = последний индекс массива + 1
 
 
 DOM (Document Object Model) - объектная модель документа
+
+
+file:///E:/Web622/js/submit.html?values=Text
