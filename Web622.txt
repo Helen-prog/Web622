@@ -301,3 +301,41 @@ JSON
 AJAX (JSON)
 
 Event Loop
+
+Win + R => cmd
+node -v
+
+SPA
+JSX
+Виртуальный DOM
+
+npx create-react-app .
+npx create-react-app project_app
+
+npm start
+- запуск проекта
+
+http://localhost:3000/
+
+
+Терминал через администратора открыть. Ввести команду Get-ExecutionPolicy, по умолчанию Restricted, необходимо ввести Set-ExecutionPolicy RemoteSigned
+
+
+javascript   javascriptreact
+
+
+src
+	components
+		header
+			Header.js
+			Header.css
+		article
+			Article.js
+			Article.css
+		footer
+			Footer.js
+		app
+			App.js
+			App.css
+		
+	
