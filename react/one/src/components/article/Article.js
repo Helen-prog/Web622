@@ -1,11 +1,40 @@
 import "./Article.css";
+import mars from "./icons/mars.png";
+import female from "./icons/female.png";
 
-function Article() {
+function Article(props) {
+    let { db } = props;
+
     return (
-        <article>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veritatis reiciendis inventore eveniet laborum voluptate? Alias ea ducimus nesciunt, adipisci vitae consectetur harum mollitia, labore officia maiores quisquam. Voluptatum, officia.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolor repellendus ducimus, asperiores autem ad laborum ipsum, saepe aut dolorum nemo voluptas reprehenderit, quasi eos excepturi in. Commodi, hic cumque.</p>
-        </article>
+        <div className="app">
+            {
+                
+                Object.keys(db).map((elem, index) => {
+                    let img;                  
+                    
+                    if (db[elem].pol === "female"){
+                        img = female;
+                    } else {
+                        img = mars;
+                    }
+                    return (
+                        <div className="card" key={index}>
+                            <img src={db[elem].photo} alt="" />
+                            <div className="name">
+                                {db[elem].name} {db[elem].surname}
+                            </div>
+                            <div className="pol">
+                                <img src={img} alt="" />
+                            </div>
+                            <div className="age">
+                                {db[elem].age}
+                            </div>
+                        </div>
+                    )
+                })
+            }
+
+        </div>
     )
 }
 
