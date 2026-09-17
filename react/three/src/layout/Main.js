@@ -7,30 +7,34 @@ import "./Main.css";
 class Main extends React.Component{
 
     state = {
-        movies: []
+        movies: [],
+        loading: true,
+        count: 0
     }
 
     componentDidMount(){
         fetch("http://www.omdbapi.com/?apikey=4eb9d7fd&s=matrix")
             .then(response => response.json())
-            .then(data => this.setState({movies: data.Search}))
+            .then(data => this.setState({movies: data.Search, loading: false, count: data.totalResults}))
     }
 
-    searchMovie = (str) => {
-        fetch(`http://www.omdbapi.com/?apikey=4eb9d7fd&s=${str}`)
+    searchMovie = (str, type="all", page) => {
+        this.setState({loading: true})
+        fetch(`http://www.omdbapi.com/?apikey=4eb9d7fd&s=${str}${type !== 'all' ? `&type=${type}` : ''}${`&page=${page}`}`)
             .then(response => response.json())
-            .then(data => this.setState({movies: data.Search}))
+            .then(data => this.setState({movies: data.Search, loading: false, count: data.totalResults}))
     }
 
     render(){   
-        const {movies} = this.state;
-
+        const {movies, loading, count} = this.state;
+        // console.log(count);
+        
         return (
             <div className="main">
                 <div className="wrap">
-                    <Search searchMovie={this.searchMovie} />
+                    <Search searchMovie={this.searchMovie} totalCount={count} />
                     {
-                        movies.length ? <MovieList movies={movies} /> : <Preloader />
+                        loading ? <Preloader /> : <MovieList movies={movies} />
                     }                    
                 </div>
             </div>
