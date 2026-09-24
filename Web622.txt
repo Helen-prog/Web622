@@ -393,3 +393,73 @@ npm install gh-pages --save-dev
 
 npm run deploy
 		
+Хуки
+
+useState()
+
+src
+	Counter.js
+	Person.js
+	Modal.js
+	Modal.css
+	Item.js
+	Task.js
+	Forms.js
+	
+	
+src
+	components
+		quizzes
+			Quizzes.js
+			Quizzes.css
+			ProgressBar.js
+			ProgressBar.css
+		result
+			Result.js
+			Result.css
+			
+			
+1 ответ
+2, 3, 4 ответа
+5, 6, 7 ответов	
+
+src
+	Gallery.js
+	Gallery.css
+	
+npm i react-image-gallery
+npm install react-image-gallery
+	
+	
+src
+	components
+		users
+			Users.js
+			User.js
+			User.css
+		success
+			Success.js
+			Success.css
+			
+			
+npm install react-router-dom
+			
+src 
+	components
+		Layout.js
+	Home.js
+	About.js
+	Articles.js
+	AboutInfo.js
+	Article.js
+	NotFoundPage.js
+	Item.js
+	Home.css
+	
+	
+http://localhost:3000/	
+http://localhost:3000/about
+http://localhost:3000/articles
+
+http://localhost:3000/about/9876
+http://localhost:3000/articles-us

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Quizzes from './components/quizzes/Quizzes';
+import Result from './components/Result';
 import './App.css';
 
 const questions = [
@@ -43,14 +44,29 @@ const questions = [
 function App() {
   const [step, setStep] = useState(0);
   const question = questions[step];
+  const [correct, setCorrect] = useState(0);
 
   const onClickVariant = (variant) => {
     setStep(step + 1);
+
+    if (variant === question.correct) {
+      setCorrect(correct + 1);
+    }
+
   }
 
   return (
     <div className="main">
-      <Quizzes question={question} onClickVariant={onClickVariant} />
+      {
+        step !== questions.length ?  
+        <Quizzes 
+        question={question} 
+        onClickVariant={onClickVariant}
+        questions={questions}
+        step={step}
+        /> :  <Result correct={correct} questions={questions} />
+      }    
+     
     </div>
   );
 }

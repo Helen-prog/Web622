@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 function Counter(){
     let [cnt, setCnt] = useState(0);
@@ -8,6 +9,12 @@ function Counter(){
     function increment(){
         setCnt(cnt + 1);
     }
+
+    useEffect(() => {
+        console.log("Hello from Counter", cnt);  
+        return () => alert("Goodbue Counter...");
+              
+    }, [cnt]);
 
     return (
         <div>

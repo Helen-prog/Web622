@@ -1,8 +1,14 @@
+import ProgressBar from "./ProgressBar";
 import "./Quizzes.css";
 
-function Quizzes({question, onClickVariant}){
+function Quizzes({question, onClickVariant, questions, step}){
+    const percent = Math.round(step / questions.length * 100);
+    console.log(percent);
+    
+
     return (
         <div className="content">
+            <ProgressBar percent={percent} />
             <h3>{question.title}</h3>
             <ul>
                 {
